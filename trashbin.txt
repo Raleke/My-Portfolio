@@ -1,0 +1,55 @@
+  // Sample certifications data - you can replace with your actual certifications
+ 
+certificate of proficiency in html5,cc3, php, mysql, javascript, nodejs,expressjs, API DEVELOPMENT, and mongodb
+ 
+he Code Center
+ 
+proficiency in software development
+ 
+  credentialId: "CKA-2023-789"
+ 
+Professional certification for Kubernetes administration and cluster management
+ 
+Cloud Native Computing Foundation
+ 
+Certified Kubernetes Administrator
+ 
+as a software developer
+ 
+developing scalable applications on Google Cloud Platform
+ 
+Google Cloud Professional Developer
+ 
+   credentialId: "GCP-2023-456"
+ 
+rofessional certification for designing distributed systems on AWS
+ 
+    credentialId: "ABC123-XYZ789"
+ 
+on Web Services
+ 
+AWS Certified Solutions Architect
+ 
+ {
+      title: "Microsoft Azure Developer Associate",
+      issuer: "Microsoft",
+      date: "2022",
+      description: "Associate level certification for developing solutions on Microsoft Azure",
+      credentialId: "AZ-204-2022-123"
+    }
+  ];
+ 
+  Whenever possible, I also apply my passion for developing products
+              with 
+ 
+ Quantum Computing and AI/ML.
+ 
+also in areas related to
+ 
+ I have at least learnt
+              something, I think
+ 
+your-email@example.com>
+ 
+trashbin.txt
+ 
