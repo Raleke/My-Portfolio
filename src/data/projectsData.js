@@ -29,7 +29,7 @@ const projectsData = [
     description: "A full-stack developer productivity tracking application that combines robust backend API capabilities with an intuitive frontend interface. The system enables developers to manage projects, track tasks with precision timing, and generate comprehensive reports on their productivity. Built with Node.js and Express on the backend, and React on the frontend, it features secure authentication through local registration and OAuth with Google and GitHub. The application includes sophisticated task timer functionality with start/stop capabilities and automatic duration tracking, file upload support for profile images and CVs, and detailed analytics for performance insights. The architecture emphasizes scalability and user experience with comprehensive validation and error handling throughout.",
     image: "dev-tracker-new.png",
     githubUrl: "https://github.com/Raleke/DEV_TRACKER",
-    liveUrl: "https://dev-tracker-bi1l.onrender.com",
+    liveUrl: "https://devtracker-rose.vercel.app/",
     swaggerUrl: "https://dev-tracker-bi1l.onrender.com/api-docs",
     techStack: ["Node.js", "Express", "MongoDB", "React", "Passport.js", "JWT", "Multer", "Docker", "OAuth"],
     featured: true,
