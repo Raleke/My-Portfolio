@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
 import certificateImage from "../../Assets/certificate.jpg";
 import gmcpnCertificate from "../../Assets/gmcpn.JPG";
@@ -9,13 +9,8 @@ import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Certifications() {
-  const [width, setWidth] = useState(1200);
   const [showModal, setShowModal] = useState(false);
   const [selectedCert, setSelectedCert] = useState(null);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
 
 
   const certifications = [
