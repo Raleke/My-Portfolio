@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
 import certificateImage from "../../Assets/certificate.jpg";
-import bscCertificate from "../../Assets/bsc.JPG";
 import gmcpnCertificate from "../../Assets/gmcpn.JPG";
 import horizonCertificate from "../../Assets/horizon.JPG";
+import accountingCertificate from "../../Assets/accounting-certificate.jpg";
+import codexMasterclassCertificate from "../../Assets/codex-masterclass-certificate.png";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -46,13 +47,22 @@ function Certifications() {
       details: "Full-stack development certification covering modern web technologies including frontend frameworks, backend development, database management, and API design principles."
     },
     {
-      title: "Certificate of Completion of Software Engineering",
-      issuer: "Babcock University",
-      date: "28/07/2025",
-      description: "Bachelor of Science in Software Engineering with a Second Class Upper Division (Higher)",
-      credentialId: "BU-2025-SE-001",
-      image: bscCertificate,
-      details: "Comprehensive software engineering degree covering algorithms, data structures, software design patterns, project management, and advanced programming concepts."
+      title: "OpenAI Codex Masterclass 2026: Build AI Agents 10x Faster",
+      issuer: "Udemy",
+      date: "June 8, 2026",
+      description: "Instructor: Shan Singh | 300,000+ Students | Best-Selling Instructor. Length: 4.5 total hours",
+      credentialId: "UC-184019e6-f25e-4652-9efa-d8c7b53c4533",
+      image: codexMasterclassCertificate,
+      details: "Hands-on training in using OpenAI Codex to build and ship AI agents faster, covering agentic workflows and practical automation techniques."
+    },
+    {
+      title: "Accounting: From Beginner to Advanced!",
+      issuer: "Udemy",
+      date: "June 22, 2026",
+      description: "Instructor: Stefan Ignatovski, Ph.D. Length: 11 total hours",
+      credentialId: "UC-96a514e2-59ad-4d97-b295-87bfcc1cf4ed",
+      image: accountingCertificate,
+      details: "Comprehensive accounting fundamentals through advanced topics, covering double-entry bookkeeping, financial statements, and core accounting principles."
     }
   ];
 
@@ -91,7 +101,7 @@ function Certifications() {
                         />
                       )}
                       <Card.Body>
-                        <Card.Title style={{ color: "#c770f0", fontSize: "1.2em" }}>
+                        <Card.Title style={{ color: "#9b7fd4", fontSize: "1.2em" }}>
                           {cert.title}
                         </Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
@@ -159,7 +169,7 @@ function Certifications() {
       {/* Modal for viewing individual certification */}
       <Modal show={showModal} onHide={handleCloseModal} size="lg" centered>
         <Modal.Header closeButton>
-          <Modal.Title style={{ color: "#c770f0" }}>
+          <Modal.Title style={{ color: "#9b7fd4" }}>
             {selectedCert?.title}
           </Modal.Title>
         </Modal.Header>

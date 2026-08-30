@@ -22,7 +22,7 @@ function Home2() {
               <br />
               <br />I am fluent in languages such as
               <i>
-                <b className="purple"> Node.js, Express.js & PHP. </b>
+                <b className="purple"> Typescript, Express.js & PHP. </b>
               </i>
               <br />
               <br />
@@ -45,7 +45,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> Express.js and Vue.js</b>
+                <b className="purple"> Express.js, typescript, fastify and Vue.js</b>
               </i>
             </p>
           </Col>
@@ -58,7 +58,7 @@ function Home2() {
                 className="img-fluid"
                 style={{
                   borderRadius: "50%",
-                  border: "2px solid #c770f0",
+                  border: "2px solid #9b7fd4",
                   backgroundColor: "transparent"
                 }}
               >

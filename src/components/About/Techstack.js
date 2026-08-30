@@ -13,7 +13,12 @@ import {
   SiPhp,
   SiExpress,
   SiVuedotjs,
+  SiApachekafka,
+  SiTypescript,
+  SiFastify,
+  SiPostgresql,
 } from "react-icons/si";
+import { BsBoxes } from "react-icons/bs";
 
 function Techstack() {
   return (
@@ -47,6 +52,21 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPhp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachekafka />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFastify />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BsBoxes title="Microservices" />
       </Col>
     </Row>
   );

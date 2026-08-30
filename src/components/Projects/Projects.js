@@ -8,8 +8,8 @@ import projectsData from "../../data/projectsData";
 import placeholder1 from "../../Assets/Projects/freelance-api.png";
 import placeholder2 from "../../Assets/Projects/dev-tracker.png";
 import placeholder3 from "../../Assets/Projects/artisan-ecommerce-new.png";
-import placeholder4 from "../../Assets/Projects/hospital.png";
-import placeholder5 from "../../Assets/Projects/ai-new-semantic.png";
+import placeholder4 from "../../Assets/Projects/telex-dev-tracker.png";
+import placeholder5 from "../../Assets/Projects/hcc.png";
 
 
 // Map placeholder images to projects

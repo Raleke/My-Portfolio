@@ -67,40 +67,39 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Hospital Management System",
-    description: "A comprehensive hospital management system designed to streamline healthcare operations and improve patient care. This backend API provides complete functionality for managing hospital resources, patient records, appointments, staff scheduling, and medical inventory. The system includes role-based access control for different user types (doctors, nurses, administrators, patients), appointment booking and management, electronic health records (EHR) management and prescription handling. Advanced features include automated scheduling algorithms, inventory alerts for medical supplies, patient history tracking, and comprehensive reporting for hospital administrators.",
-    image: "hospital-new.png",
-    githubUrl: "https://github.com/Raleke/hospital",
-    techStack: ["Node.js", "Express", "MongoDB", "JWT", "Mongoose", "Docker", "Jest", "Supertest"],
+    title: "Telex Dev Tracker",
+    description: "A development tracking assistant bot for Telex, built with Node.js, TypeScript, and Mastra AI agents. Manages tasks via natural language commands, auto-generates daily progress summaries, detects issues from messages, and integrates with Telex workflows through Agent-to-Agent (A2A) communication and webhooks.",
+    image: "telex-dev-tracker.png",
+    githubUrl: "https://github.com/Raleke/telex-dev-tracker",
+    liveUrl: "https://telex-dev-tracker-production.up.railway.app",
+    techStack: ["Node.js", "TypeScript", "Express", "Mastra", "SQLite", "Docker", "Cron"],
     featured: true,
     highlights: [
-      "Complete patient management system",
-      "Electronic health records (EHR) management",
-      "Appointment booking and scheduling",
-      "Role-based access control",
-      "Medical inventory management",
-      "Prescription and medication tracking",
-      "Staff scheduling and management",
-      "Comprehensive reporting and analytics"
+      "Natural language task management commands",
+      "Automated daily progress summaries",
+      "Issue detection from message content",
+      "Agent-to-Agent (A2A) protocol integration",
+      "Telex webhook support",
+      "Progress tracking with visual charts",
+      "Admin endpoints for manual operations",
+      "Dockerized for consistent deployment"
     ]
   },
   {
     id: 5,
-    title: "AI Semantic API",
-    description: "An innovative AI-powered semantic analysis API currently in active development. This cutting-edge project focuses on natural language processing and semantic understanding, providing intelligent text analysis capabilities. The system is being built to offer advanced features including sentiment analysis, entity recognition, topic modeling, and semantic similarity matching. While still under construction, the architecture is designed to support scalable AI processing with integration capabilities for various NLP models and services.",
-    image: "ai-semantic-new.png",
-    githubUrl: "https://github.com/Raleke/ai-semantic-api",
-    techStack: ["Node.js", "Express", "Python", "TensorFlow", "Natural Language Processing", "MongoDB", "Docker", "Microservices"],
+    title: "Happiness Crochet Corner (HCC)",
+    description: "A content and e-commerce platform for learning crochet, offering free and paid stitch-by-stitch lessons for beginners through intermediate makers. Includes a tiered membership model (Free Zone / Pro Zone), a shop for hooks, yarn, and starter kits, and subscription pricing.",
+    image: "hcc.png",
+    githubUrl: "https://github.com/Raleke/hcc",
+    liveUrl: "https://hcc-seven.vercel.app",
+    techStack: ["Next.js", "React", "Tailwind CSS"],
     featured: false,
     highlights: [
-      "Natural language processing capabilities",
-      "Sentiment analysis and entity recognition",
-      "Topic modeling and semantic similarity",
-      "Scalable AI processing architecture",
-      "Integration with various NLP models",
-      "Microservices-based design",
-      "RESTful API with comprehensive documentation",
-      "Active development with continuous improvements"
+      "Free and paid crochet lesson tiers",
+      "Tiered membership model (Free Zone / Pro Zone)",
+      "Shop for hooks, yarn, and starter kits",
+      "Subscription-based pricing",
+      "Content platform for beginner to intermediate makers"
     ]
   }
 ];

@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -11,7 +15,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #9b7fd4;
 }
 
 .purple {
@@ -36,6 +40,7 @@ button:focus {
   background-image: url(./Assets/preloader.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px 70px;
 }
 
 #preloader-none {
@@ -57,18 +62,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #201a2c;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(155, 127, 212, 0.85);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(180, 155, 225, 0.9);
   border-radius: 12px;
 }
 
@@ -257,10 +262,8 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: url(./Assets/homebg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  background: #0f0c14;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -283,7 +286,7 @@ button:focus {
   }
 }
 
-/* Add subtle particle animation overlay */
+/* Single quiet accent glow, no competing hues */
 .home-section::before {
   content: '';
   position: absolute;
@@ -291,33 +294,8 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3), transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3), transparent 50%),
-              radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2), transparent 50%);
-  animation: float 20s ease-in-out infinite;
+  background: radial-gradient(circle at 30% 70%, rgba(155, 127, 212, 0.18), transparent 55%);
   pointer-events: none;
-}
-
-/* Add animated glow effect */
-.home-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
-  animation: shimmer 8s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 
 @keyframes float {

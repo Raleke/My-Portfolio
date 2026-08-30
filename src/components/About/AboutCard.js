@@ -9,9 +9,9 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Nnajiofor Ralueke Miracle </span>
-            from <span className="purple"> Anambra,Nigeria.</span>
+            from <span className="purple"> Nigeria.</span>
             <br />
-            I am currently Self employed as a software developer .
+            I am currently employed as a software developer .
             <br />
             I have completed my Bsc in Software Engineering from the Prestigious Babcock University 
             <br />

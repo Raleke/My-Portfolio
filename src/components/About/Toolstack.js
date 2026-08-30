@@ -11,6 +11,9 @@ import {
   SiPhpstorm,
   SiMysql,
   SiJsonwebtokens,
+  SiKubernetes,
+  SiGrafana,
+  SiInsomnia,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -45,6 +48,15 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiJsonwebtokens />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGrafana />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiInsomnia />
       </Col>
     </Row>
   );

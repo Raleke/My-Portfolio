@@ -3,10 +3,11 @@ import { Container, Row, Col, Alert, Spinner } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-function GitHubProjects({ username }) {
+function GitHubProjects() {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const username = "Raleke";
 
   useEffect(() => {
     const fetchGitHubRepos = async () => {
@@ -16,7 +17,7 @@ function GitHubProjects({ username }) {
           throw new Error('Failed to fetch repositories');
         }
         const data = await response.json();
-        
+
         // Filter out forked repos and map to project format
         const filteredRepos = data
           .filter(repo => !repo.fork && !repo.private)
@@ -32,7 +33,7 @@ function GitHubProjects({ username }) {
             stars: repo.stargazers_count,
             forks: repo.forks_count
           }));
-        
+
         setRepos(filteredRepos);
       } catch (err) {
         setError(err.message);
@@ -41,22 +42,19 @@ function GitHubProjects({ username }) {
       }
     };
 
-    if (username) {
-      fetchGitHubRepos();
-    }
-  }, [username]);
+    fetchGitHubRepos();
+  }, []);
 
   // Function to determine Swagger URL based on repo name
   const getSwaggerUrl = (repoName) => {
     const swaggerUrls = {
-      'ecommerce-api': 'https://ecommerce-api-demo.herokuapp.com/api-docs',
-      'task-management-system': 'https://task-manager-api.herokuapp.com/swagger',
-      'weather-dashboard-api': 'https://weather-api-service.herokuapp.com/api-docs',
-      'auth-service': 'https://auth-service-demo.herokuapp.com/swagger-ui',
-      'portfolio-backend': 'https://portfolio-backend-demo.herokuapp.com/api/documentation',
-      'chat-api': 'https://chat-api-service.herokuapp.com/docs'
+      'freelance-api': 'https://freelance-api-qd9n.onrender.com/api-docs',
+      'DEV_TRACKER': 'http://localhost:3900/api-docs/#/',
+      'Artisan-E-commerce-with-KPI': 'https://rolo-fyp.onrender.com/api-docs',
+      'hospital': null,
+      'ai-semantic-api': null
     };
-    
+
     return swaggerUrls[repoName] || null;
   };
 
@@ -66,7 +64,7 @@ function GitHubProjects({ username }) {
         <Particle />
         <Container>
           <h1 className="project-heading">
-            My GitHub <strong className="purple">Repositories</strong>
+            My Recent <strong className="purple">Works </strong>
           </h1>
           <div className="text-center" style={{ color: "white", padding: "50px" }}>
             <Spinner animation="border" variant="primary" />
@@ -83,7 +81,7 @@ function GitHubProjects({ username }) {
         <Particle />
         <Container>
           <h1 className="project-heading">
-            My GitHub <strong className="purple">Repositories</strong>
+            My Recent <strong className="purple">Works </strong>
           </h1>
           <Alert variant="danger" className="mt-4">
             Error loading repositories: {error}
